@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+/* css reset  */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* main style */
+
+:root {
+    --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --Red: hsl(0, 100%, 66%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+
+.container{
+    max-width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: var(--White);
+    background-image: url(./images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 220px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.card{
+    position: relative;
+}
+
+.first-card{
+    width: 18rem;
+    margin: 5% 0 0 4rem;
+}
+
+.first-card figcaption{
+    position: absolute;
+    top: 45%;
+    left: 18rem;
+    color: var(--White);
+    font-size: .8rem;
+}
+
+.second-card figure{
+    width: 18rem;
+    position: absolute;
+    margin-left: 1rem;
+    top: 57%;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .4);
+}
+
+.second-card figure figcaption {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    text-align: center;
+    font-size: .7rem;
+    color: var(--White);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.second-card figure p {
+    position: absolute;
+    font-size: .8rem;
+    word-spacing: 3px;
+    top: 70%;
+    left: 2rem;
+    color: var(--White);
+}
+
+.second-card figure p:nth-child(2), span:first-child {
+    padding-left: 12rem;
+}
+.circle{
+    position: absolute;
+    top: 10%;
+    left: 2rem;
+    border-radius: 60%;
+}
+
+#form-group{
+    margin-top: 9rem;
+}
+#form-group p {
+    font-size: .8rem;
+    text-transform: uppercase;
+    margin-bottom: .3rem;
+}
+
+#form-group > :nth-child(4){
+    margin-top: 1rem;
+}
+
+input{
+    border-radius: 7px;
+    border: 1px solid var(--Dark-grayish-violet);
+    padding: .7rem 0 .7rem .4rem
+}
+
+
+#cardholder,
+#cardNumber {
+    width: 20rem;
+}
+
+.expire,
+.cvc {
+    display: inline-block;
+    margin-top: 1rem;
+}
+.expire input {
+    width: 3rem;
+}
+
+#form-group .error{
+    color: var(--Red);
+    text-transform: lowercase;
+}
+
+button {
+    width: 20rem;
+    display: block;
+    border-radius: 7px;
+    padding: .8rem 0;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    cursor: pointer;
+    border: none;
+    margin: 2rem 0 2rem 0;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .4);
+}
+
+/* complete page section */
+.complete-page{
+    display: none;
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.complete-page section img{
+    margin: 0 0 1rem 7.5rem;
+}
+
+/* media query section  */
+
+@media screen and (min-width: 1200px){
+    .container{
+        background-size: 35% 100%;
+        justify-content: center;
+    }
+    .main-page {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-size: 35% 100%;
+    }
+
+    
+    .first-card{
+        margin-top: 12rem;
+    }
+    .first-card figcaption {
+    top: 75%;
+    }
+
+    .second-card figure {
+        top: 0;
+    }
+
+    #form-group{
+        margin: 0 0 0 3rem
+    }
+
+    /* complete page section */
+    .complete-page {
+        margin: 0 0 0 3rem;
+    }
+
+}

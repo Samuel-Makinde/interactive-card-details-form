@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"><link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="main-page">
+        <div class="card">
+          <div class="first-card">
+          <figure>
+            <img src="./images/bg-card-back.png" alt="">
+            <figcaption id="cvc-tag">000</figcaption>
+          </figure>
+          </div>
+
+        <div class="second-card">
+        <figure>
+        <img src="./images/bg-card-front.png" alt="image">
+        <div class="circle"><img src="./images/card-logo.svg" alt="img"></div>
+        
+        <figcaption id="cardNumber-tag">0000 0000 0000 0000 </figcaption>
+        <p id="name-tag">Jane Appleseed </p>
+        <p> <span id="month-tag">00</span>/<span id="year-tag">00</span> </p> 
+        </figure>
+        </div>
+      </div>
+        
+      <section>
+        <form action="" id="form-group">
+          <p>Cardholder Name</p>
+          <input type="text"  id="cardholder" placeholder="e.g Samuel Makinde" autofocus>
+          <p class="error" id="name-error"></p>
+
+          <p>Card Number</p>
+          <input type="text" name="cardNumber" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" >
+          <p class="error" id="number-error"></p>
+
+          <div class="expire">
+            <p>EXP. DATE (MM/YY)</p>
+            <input type="text" name="expire" id="expire-month" placeholder="MM">
+            <input type="text" name="expire" id="expire-year" placeholder="YY"> 
+          <p class="error" id="expire-error"></p>
+          </div>
+
+          <div class="cvc">
+            <p> CVC</p>
+            <input type="text" name="cvc-details" id="cvc" placeholder="cvc">
+            <p class="error" id="cvc-error"></p>
+          </div>
+
+          <button type="submit">Confirm</button>
+        </form>
+      </section>
+
+      <div class="complete-page">
+      <section>
+        <img src="./images/icon-complete.svg" alt="image">
+        <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+        <button onclick="previousPage()">Continue</button>
+      </section>
+      </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./code.js"></script>
+</body>
+</html>
