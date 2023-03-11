@@ -30,6 +30,10 @@ Users should be able to:
 - See hover, active, and focus states for interactive elements on the page
 
 ### Screenshot
+active state
+![active-states](https://user-images.githubusercontent.com/79846013/224462161-a1122f05-4013-4103-ae4b-6b01fe1cc4c2.jpg)
+![complete-state-desktop](https://user-images.githubusercontent.com/79846013/224462177-cf3f6203-402e-4d78-b9ff-e4ae0343fc99.jpg)
+![mobile-design](https://user-images.githubusercontent.com/79846013/224462186-e44b46e0-eb0b-4795-8ee5-3870f07839f5.jpg)
 
 
 ### Links
@@ -50,8 +54,6 @@ Users should be able to:
 ### What I learned
 This project make me to understand how to get input from user and display it in real time and how to display error message when the input content is wrong
 
-
-To see how you can add code snippets, see below:
 
 ```html
 <figure>
